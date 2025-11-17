@@ -118,7 +118,7 @@ const Portfolio = () => {
   return (
     <div>
       <nav className="navbar">
-  <h1 className="logo">MUTHURAMA A</h1>
+  <h1 href="#about"className="logo">MUTHURAMA A</h1>
 
   <div className="mobile-actions">
     
@@ -134,7 +134,7 @@ const Portfolio = () => {
     <li><a href="#skills">Skills</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#profiles">Profiles</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#contactt">Contact</a></li>
   </ul>
 
   {/* For desktop mode only */}
@@ -147,7 +147,7 @@ const Portfolio = () => {
           <canvas ref={particleRef} className="about-particles-bg" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', zIndex: 0, pointerEvents: 'none' }} />
           <div className="about-card" style={{ position: 'relative', zIndex: 1 }}>
             <div className="about-img-wrapper">
-              <img src="/photo.jpg" alt="Profile" className="profile-img-large" />
+              <img src="/Muthurama.jpg" alt="Profile" className="profile-img-large" />
             </div>
             <div className="about-info">
               <h2 className="about-title">I'm <span className={`about-role-rotate${fade ? ' fade-in' : ' fade-out'}`}>a {roles[currentRole]}</span></h2>
@@ -344,6 +344,7 @@ const Portfolio = () => {
   <button
    onClick={() => setShowContact(prev => !prev)}
     className="message-me-btn"
+    id="contactt"
     style={{
       padding: "10px 20px",
       fontSize: "16px",
